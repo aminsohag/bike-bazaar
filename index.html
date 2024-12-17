@@ -34,46 +34,48 @@
   <!-- header -->
   <header class="md:container mx-auto">
     <!-- navbar -->
-    <div class="navbar bg-base-100">
-      <div class="flex-1">
-        <div class="dropdown">
-          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
+    <nav class="my-6">
+      <div class="navbar bg-base-100">
+        <div class="flex-1">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>News</a></li>
+              <li><a>Contact</a></li>
+            </ul>
           </div>
-          <ul
-            tabindex="0"
-            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <a class="font-bold text-3xl">Bike Bazaar</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
             <li><a>Home</a></li>
             <li><a>About</a></li>
             <li><a>News</a></li>
             <li><a>Contact</a></li>
           </ul>
         </div>
-        <a class="font-bold text-3xl">Bike Bazaar</a>
+        <div class="">
+          <a class="btn bg-bike-primary text-white">Login</a>
+        </div>
       </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal px-1">
-          <li><a>Home</a></li>
-          <li><a>About</a></li>
-          <li><a>News</a></li>
-          <li><a>Contact</a></li>
-        </ul>
-      </div>
-      <div class="">
-        <a class="btn bg-bike-primary text-white">Login</a>
-      </div>
-    </div>
+    </nav>
     <!-- carousel -->
   <div class="carousel w-full lg:h-[550px] bg-bike-primary-bg">
     <!-- slider 1 -->
@@ -81,9 +83,7 @@
       <div class="flex flex-col lg:flex-row p-12 lg:p-24">
         <!-- text content -->
         <div class="space-y-7 flex-1">
-          <h2 class="text-6xl font-bold">
-            Ride-on R15 V4 <br />
-            with Smile
+          <h2 class="text-4xl font-bold md:text-6xl">Ride-on R15 V4 <br />with Smile
           </h2>
           <p>
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do
@@ -168,10 +168,10 @@
         <div>
           <h1 class="text-3xl font-semibold text-center md:text-5xl ">Features Bikes In This Year</h1>
           <p class="text-center mb-16">Best bike Collection</p>
-          <div class="grid grid-cols-1 gap-12  lg:grid-cols-3">
-            <img src="images/others/feature-bike.png" alt="">
-            <img src="images/others/feature-bike.png" alt="">
-            <img src="images/others/feature-bike.png" alt="">
+          <div class="grid grid-cols-1 items-center gap-12  lg:grid-cols-3">
+            <img class="w-full" src="images/others/feature-bike.png" alt="">
+            <img class="w-full" src="images/others/feature-bike.png" alt="">
+            <img class="w-full" src="images/others/feature-bike.png" alt="">
           </div>
         </div>
      </section>
@@ -343,19 +343,31 @@
         </div>
       </section>
   </main>
-
   <!-- footer -->
-  <!-- <footer class="bg-[#0B0D17]">
-      <div>
-        <div>
-          <p></p>
-          <p></p>
-          <p>© 2020 bike. All rights reserved</p>
+  <footer class="bg-[#0B0D17] text-white">
+      <section class="md:container md:mx-auto p-16">
+        <div class="flex flex-col items-center md:flex-row justify-between text-center">
+          <div class="mb-6">
+            <ul class="flex mb-6 ">
+              <li class="mr-2">Download Now</li>
+              <li class="mr-2">License</li>
+            </ul>
+            <ul class="flex mb-6 text-center">
+              <li class="mr-2">Home</li>
+              <li class="mr-2">About</li>
+              <li class="mr-2">Contact</li>
+              <li class="mr-2">Features</li>
+              <li class="mr-2">Help</li>
+            </ul>
+            <p>© 2020 bike. All rights reserved</p>
+          </div>
+          <div class="mb-6">
+            <p class="text-2xl text-center mb-4">Get the App</p>
+            <img class="w-36 mb-4" src="images/others/ios.png" alt="">
+            <img class="w-36 mb-4" src="images/others/android.png" alt="">
+          </div>
         </div>
-        <div>
-
-        </div>
-      </div>
-  </footer> -->
+      </section>
+  </footer>
 </body>
 </html>
